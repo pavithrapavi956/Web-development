@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Submit a Movie Review</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        .heading {
+            max-width: 600px;
+            margin: auto;
+            background-color: whitesmoke;
+            padding: 20px;
+            box-shadow: 0 0 10px black;
+        }
+        h1 {
+            color:black;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid white;
+            border-radius: 4px;
+            
+        }
+        input[type="submit"] {
+            background-color:green;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 4px;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color:  green;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Submit Your Movie Review</h1>
+        <form action="/submit_review" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" >
+
+            <label for="movie-title">Movie Title</label>
+            <input type="text" id="movie-title" name="movie_title" placeholder="Enter the movie title" >
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="">Select a rating</option>
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+
+            <label for="review">Your Review</label>
+            <textarea id="review" name="review" rows="6" placeholder="Write your review here..." ></textarea>
+
+            <input type="submit" value="Submit Review">
+        </form>
+    </div>
+</body>
+</html>
+

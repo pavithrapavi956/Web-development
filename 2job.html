@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>job searching registation form</title>
+        <style>
+            body{
+                background-color: whitesmoke;
+                color: black;
+                margin: 20px;
+                display: flex;
+                margin-left: 400px;
+                
+            }
+            .heading{
+                max-width: 700px;
+                margin: 0;
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: gray;
+                
+            }
+            h1{
+                text-align: center;
+                display: flex;
+                margin-bottom: 20px;
+                
+            }
+            label 
+            {
+            display: block;
+            margin: 8px;
+            }
+            input[type="text"], input[type="email"],input[type="tel"],select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 12px;
+            border: 1px solid  black;
+            border-radius: 4px;
+            }
+            input[type="text"], input[type="email"],input[type="tel"],select:hover{
+                border-color:aqua;
+            }
+
+            
+            input[type="radio"] 
+            {
+            margin-right: 10px;
+            }
+            button 
+            {
+            width: 100%;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            }
+
+        </style>    
+    </head>
+    <body>
+        <div class="heading">
+            <caption><h1>Job searching Registration form </h1></caption>
+            <form>
+            <h2>1.Full Name</h2>
+            <label for="First Name">First Name</label>
+            <input type="text" name="First Name" id="First Name" placeholder="firstname">
+            
+            <label for="Last Name">Last Name</label>
+            <input type="text" name="Last Name" id="Last Name" placeholder="lastname">
+
+            <h2>2.Email</h2>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="abc@gmail.com">
+            <h2>3.Adress</h2>
+            <input type="text" name="Adress" id="Adress" placeholder="Adress"><br>
+            <input type="text" name="Adress line 2" id="Adress line 2" placeholder="Adress line 2"><br>
+            <input type="text" name="city" id="city" placeholder="enter your city">
+            <select name="country" id="country">
+                <option >select your country</option>
+                <option>India</option>
+                <option>Afghanistan</option>
+                <option>south africa</option>
+                <option>colombia</option>
+                <option>France</option>
+            </select>
+            <h2>4.Phone Number</h2>
+            <label for="phone number">Phone Number</label>
+            <input type="tel" name="phone number" id="phone number" placeholder="enter your mobile number">
+            <h2>6.Position that your applying for:</h2>
+            <select name="position" id="position">
+                <option >please select option</option>
+                <option>sales agent</option>
+                <option>customer agent</option>
+                <option>shift manager</option>
+                <option>Assistant manager</option>
+                <option>other</option>
+            </select>
+            <h2>7.Add resume/URL</h2>
+            <input type="text"><br>
+            <h2>8.How did you hear about us:</h2>
+            <input type="radio" name="hear" id="hear">Google search<br><br>
+            <input type="radio" name="hear" id="hear">Online advert<br><br>
+            <input type="radio" name="hear" id="hear">Friend recommendation<br><br>
+            <input type="radio" name="hear" id="hear">Google search<br><br>
+            <button type="submit">submit</button>
+            </form>
+        </div>
+    </body>
+</html>
+
+
+
+
+            
+
+       
+  

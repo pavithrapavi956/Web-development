@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color:white;
+            box-shadow: 0 0 10px black;
+            border: 1px solid white;
+        }
+        .header, .footer {
+            text-align: center;
+        }
+        .header img {
+            width: 100px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .header p, .header h2 {
+            margin: 5px 0;
+        }
+        .student-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+        .student-info .info-left, .student-info .info-right {
+            width: calc(50% - 10px);
+
+        }
+        .student-info .info-left {
+            text-align: left;
+        }
+        .student-info .info-right {
+            text-align: right;
+        }
+        .student-info img {
+            width: 100px;
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th, table td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        table th {
+            background-color: white;
+        }
+        .credits-info {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .credits-info div {
+            width: calc(50% - 10px);
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="image1.png" alt="MBU Logo">
+            <h1>MOHAN BABU UNIVERSITY</h1>
+            <p>Sree Sainath Nagar, Tirupati – 517 102, A.P.</p>
+            <h2>GRADE CARD</h2>
+            <p>IV-Semester - Batch-II (MBU22) Apr-2024</p>
+        </div>
+        <div class="student-info">
+            <div class="info-left">
+                <div><strong>Batch:</strong> 2022-2023</div>
+                <div><strong>Roll Number:</strong> 22102A030296</div>
+                <div><strong>Father's Name:</strong> DEVIREDDY ESWAR REDDY</div>
+                <div><strong>Mother's Name:</strong> DEVIREDDY PAVANA KUMARI</div>
+            </div>
+            <div class="info-right">
+                <div><strong>Student Name:</strong> DEVIREDDY VENKATA PAVITHRA</div>
+                <div><strong>UID Number:</strong> 22102A030296</div>
+                <div><strong>Program Name:</strong> B.Tech. - Computer Science and Engineering (Data Science)</div>
+            </div>
+            <img src="Screenshot (443).png" alt="Profile Picture">
+        </div>
+        <table>
+                
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Credits</th>
+                    <th>Grade Point</th>
+                    <th>Grade</th>
+                </tr>
+                
+            
+            <tbody>
+                <tr>
+                    <td>22LG107603</td>
+                    <td>SPOKEN ENGLISH</td>
+                    <td>2</td>
+                    <td>10</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>22CB102002</td>
+                    <td>COMPUTER NETWORKS</td>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>22AI101002</td>
+                    <td>THEORY OF COMPUTATION</td>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>22IT101001</td>
+                    <td>SOFTWARE ENGINEERING</td>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>22MG101401M</td>
+                    <td>ESSENTIALS OF LEADERSHIP</td>
+                    <td>2</td>
+                    <td>10</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>22ME101704M</td>
+                    <td>MANAGING INNOVATION AND ENTREPRENEURSHIP</td>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>22MM101408</td>
+                    <td>STATISTICS FOR ENGINEERS</td>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>22CS105001</td>
+                    <td>R PROGRAMMING</td>
+                    <td>2</td>
+                    <td>10</td>
+                    <td>O</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="credits-info">
+            <div><strong>Credits Registered / Completed:</strong> 22 / 22</div>
+            <div><strong>Credits Registered:</strong> 22</div>
+            <div><strong>Credits Completed:</strong> 22</div>
+            <div><strong>CGPA:</strong> 9.80</div>
+            <div><strong>SGPA:</strong> 10.00</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deactivation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: hsl(192, 17%, 94%);
+            display: flex;
+            justify-content: center;
+           
+        }
+        .form-container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            max-width: 600px;
+            width: 400px;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color:black;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background:blueviolet;
+            color: white;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Account Deactivation</h2>
+        <form >
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="reason">Reason for Deactivation:</label>
+            <select id="reason" name="reason" required>
+                <option value="privacy">Privacy Concerns</option>
+                <option value="too_many_emails">Too Many Emails</option>
+                <option value="not_useful">Not Useful</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="confirmation">Type "DEACTIVATE" to confirm:</label>
+            <input type="text" id="confirmation" name="confirmation" required>
+
+            <input type="submit" value="Deactivate Account">
+        </form>
+    </div>
+</body>
+</html>
